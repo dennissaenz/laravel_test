@@ -19,7 +19,7 @@ class UserController extends Controller
     {
         try {
             $this->resultSet = User::where('id','>',0)
-                                ->with('domicilios')
+                                ->with('domicilio')
                                 ->get();
         }catch (\Exception $e){
             $this->success   = false;

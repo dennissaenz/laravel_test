@@ -25,7 +25,7 @@ class User extends Authenticatable
         'fecha_nacimento'
     ];
 
-    public function domicilios(){
+    public function domicilio(){
         return $this->hasOne(UserDomicilio::class, "user_id", "id");
     }
 
